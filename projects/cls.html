@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Child Labor Statistics — Educational data visualization that makes complex information accessible. Case study by Damien Sullins." />
+  <title>Child Labor Statistics — Damien Sullins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">DS</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="../index.html#work" class="back-link">← Back to Work</a>
+
+      <div class="project-hero">
+        <span class="project-tag">Data Viz</span>
+        <h1>Child Labor Statistics</h1>
+        <p class="subtitle">Educational Data Visualization</p>
+        <div class="project-hero-visual" style="--accent: #10b981">📊</div>
+        <a href="https://cls.usertermed.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+      </div>
+
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>
+          Created for a school assignment, this project presents child labor statistics through a clean, accessible interface. The goal was to make complex information easier to understand without sacrificing clarity or respect for the subject.
+        </p>
+
+        <h2>The Problem</h2>
+        <p>
+          Raw statistics on sensitive topics can be dense, intimidating, or poorly presented. When data is hard to parse, it fails to educate. Accessibility and clear visual hierarchy become essential for meaningful communication.
+        </p>
+
+        <h2>The Solution</h2>
+        <p>
+          A focused data visualization experience that prioritizes legibility, structure, and accessibility. Charts and figures are presented with supporting context so readers can grasp both the numbers and their significance.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Clear presentation of complex statistical data</li>
+          <li>Accessible design patterns for broader reach</li>
+          <li>Educational framing that supports understanding</li>
+          <li>Restrained visual language that keeps focus on the information</li>
+        </ul>
+
+        <h2>Technologies</h2>
+        <div class="tech-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Data Visualization</span>
+          <span>Accessibility</span>
+        </div>
+
+        <h2>Challenges</h2>
+        <p>
+          Handling sensitive subject matter with care. Designing charts and layouts that remain readable on small screens. Ensuring the interface meets accessibility expectations while staying visually coherent.
+        </p>
+
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Data presentation</li>
+          <li>Education</li>
+          <li>Accessibility</li>
+          <li>Clear communication</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Damien Sullins</span>
+        <span class="footer-loc">Springfield, Missouri</span>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span></span>
+        <span class="footer-tech">Built with care — HTML, CSS & JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

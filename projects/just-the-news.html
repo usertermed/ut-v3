@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Just The News — A lightweight, algorithm-free news reader focused on readability and clean editorial design. Case study by Damien Sullins." />
+  <title>Just The News — Damien Sullins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">DS</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="../index.html#work" class="back-link">← Back to Work</a>
+
+      <div class="project-hero">
+        <span class="project-tag">News Platform</span>
+        <h1>Just The News</h1>
+        <p class="subtitle">A Lightweight News Reader</p>
+        <div class="project-hero-visual" style="--accent: #3b82f6">📰</div>
+        <a href="http://justthenews.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+      </div>
+
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>
+          Just The News is a minimalist news platform built to strip away recommendation algorithms, endless feeds, and visual noise. The goal: let readers browse current events in a clean, chronological experience that prioritizes the writing itself.
+        </p>
+
+        <h2>The Problem</h2>
+        <p>
+          Modern news apps are often optimized for engagement rather than understanding. Algorithmic feeds, autoplay video, and dense UI patterns compete for attention and make it harder to simply read the news.
+        </p>
+
+        <h2>The Solution</h2>
+        <p>
+          A focused reading experience with a clear editorial hierarchy, fast load times, and zero distraction layers. Content is presented chronologically. The interface stays out of the way so the stories can take center stage.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Clean chronological feed without algorithmic ranking</li>
+          <li>Typography and spacing optimized for long-form readability</li>
+          <li>Fast performance and minimal client-side overhead</li>
+          <li>Editorial design language inspired by classic newspapers</li>
+        </ul>
+
+        <h2>Technologies</h2>
+        <div class="tech-list">
+          <span>Next.js</span>
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Tailwind CSS</span>
+          <span>Vercel</span>
+        </div>
+
+        <h2>Challenges</h2>
+        <p>
+          Balancing simplicity with enough structure to feel intentional. Designing a layout that feels premium and calm without becoming sparse or incomplete. Ensuring the experience remains fast even as content volume grows.
+        </p>
+
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Readability</li>
+          <li>Simplicity</li>
+          <li>Fast performance</li>
+          <li>Clean editorial design</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Damien Sullins</span>
+        <span class="footer-loc">Springfield, Missouri</span>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span></span>
+        <span class="footer-tech">Built with care — HTML, CSS & JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

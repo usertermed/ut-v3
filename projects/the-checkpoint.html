@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Checkpoint — A digital time capsule inspired by internet checkpoint videos. Case study by Damien Sullins." />
+  <title>The Checkpoint — Damien Sullins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">DS</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="../index.html#work" class="back-link">← Back to Work</a>
+
+      <div class="project-hero">
+        <span class="project-tag">Time Capsule</span>
+        <h1>The Checkpoint</h1>
+        <p class="subtitle">A Digital Time Capsule</p>
+        <div class="project-hero-visual" style="--accent: #06b6d4">⏳</div>
+        <a href="http://the-checkpoint.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+      </div>
+
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>
+          Inspired by internet checkpoint videos, The Checkpoint lets visitors leave short notes, thoughts, or messages that others may discover later. It’s a quiet space for reflection and shared digital memory.
+        </p>
+
+        <h2>The Problem</h2>
+        <p>
+          Most online spaces are built for the present moment — fast replies, trending topics, immediate reaction. There are few places designed for messages that are meant to be found later, or for the quiet act of leaving something behind.
+        </p>
+
+        <h2>The Solution</h2>
+        <p>
+          A minimal digital time capsule. Visitors contribute small messages without pressure for engagement. The interface stays calm and restrained so the content — the human note — remains the focus.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Leave notes, thoughts, or short messages for future discovery</li>
+          <li>Minimal, contemplative interface</li>
+          <li>Community-driven archive of digital memories</li>
+          <li>Design that prioritizes presence over performance</li>
+        </ul>
+
+        <h2>Technologies</h2>
+        <div class="tech-list">
+          <span>Next.js</span>
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Minimal UI</span>
+          <span>Vercel</span>
+        </div>
+
+        <h2>Challenges</h2>
+        <p>
+          Creating an experience that feels meaningful without being heavy-handed. Keeping the design sparse while still communicating invitation and care. Balancing anonymity and authenticity in contributions.
+        </p>
+
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Reflection</li>
+          <li>Community</li>
+          <li>Digital memories</li>
+          <li>Minimal design</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Damien Sullins</span>
+        <span class="footer-loc">Springfield, Missouri</span>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span></span>
+        <span class="footer-tech">Built with care — HTML, CSS & JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

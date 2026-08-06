@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rock Almighty — An interactive wisdom generator with personality and play. Case study by Damien Sullins." />
+  <title>Rock Almighty — Damien Sullins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">DS</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="../index.html#work" class="back-link">← Back to Work</a>
+
+      <div class="project-hero">
+        <span class="project-tag">Interactive</span>
+        <h1>Rock Almighty</h1>
+        <p class="subtitle">Interactive Wisdom Generator</p>
+        <div class="project-hero-visual" style="--accent: #f59e0b">🪨</div>
+        <a href="http://rockalmighty.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site ↗</a>
+      </div>
+
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>
+          Rock Almighty is a playful interactive experience: click a mysterious rock and receive random words of wisdom, humorous advice, or thoughtful messages. It’s equal parts curiosity object and micro-delight.
+        </p>
+
+        <h2>The Problem</h2>
+        <p>
+          Not every digital product needs to be serious. There was room for something small, personality-driven, and purely interactive — an experience that rewards a single click with a moment of surprise or reflection.
+        </p>
+
+        <h2>The Solution</h2>
+        <p>
+          A single-purpose interactive piece with strong character. Animation, timing, and copy work together so each click feels intentional. The rock becomes a character; the wisdom becomes the punchline or the pause.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Click-to-reveal wisdom, advice, and humor</li>
+          <li>Personality-driven interaction and animation</li>
+          <li>Lightweight, focused experience</li>
+          <li>Designed for play and shareability</li>
+        </ul>
+
+        <h2>Technologies</h2>
+        <div class="tech-list">
+          <span>JavaScript</span>
+          <span>CSS Animation</span>
+          <span>HTML</span>
+          <span>Vercel</span>
+        </div>
+
+        <h2>Challenges</h2>
+        <p>
+          Finding the right tone — wise enough to feel intentional, light enough to stay fun. Crafting animation that feels responsive and alive without overcomplicating a simple interaction.
+        </p>
+
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Personality</li>
+          <li>Interaction</li>
+          <li>Playfulness</li>
+          <li>Animation</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Damien Sullins</span>
+        <span class="footer-loc">Springfield, Missouri</span>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span></span>
+        <span class="footer-tech">Built with care — HTML, CSS & JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
