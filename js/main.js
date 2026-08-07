@@ -169,4 +169,24 @@
       }
     });
   });
+
+  // ---------- Skills confetti on click ----------
+  // Fires a confetti burst when any `.skill-card` is clicked.
+  document.addEventListener("click", (e) => {
+    const skill = e.target.closest && e.target.closest(".skill-card");
+    if (!skill) return;
+    // origin x/y centered on the clicked element
+    const rect = skill.getBoundingClientRect();
+    const origin = {
+      x: (rect.left + rect.width / 2) / window.innerWidth,
+      y: (rect.top + rect.height / 2) / window.innerHeight,
+    };
+
+    if (typeof confetti === "function") {
+      // multiple bursts for a nicer effect
+      confetti({ particleCount: 40, spread: 60, origin });
+      setTimeout(() => confetti({ particleCount: 30, spread: 80, origin }), 120);
+      setTimeout(() => confetti({ particleCount: 20, spread: 100, origin }), 260);
+    }
+  });
 })();
