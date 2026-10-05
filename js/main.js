@@ -184,7 +184,7 @@
 
     if (typeof confetti === "function") {
       // multiple bursts for a nicer effect
-      confetti({ particleCount: 40, spread: 60, origin });
+      confetti({ particleCount: 400, spread: 60, origin });
       setTimeout(() => confetti({ particleCount: 30, spread: 80, origin }), 120);
       setTimeout(() => confetti({ particleCount: 20, spread: 100, origin }), 260);
     }
